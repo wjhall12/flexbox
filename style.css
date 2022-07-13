@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { font-family: Arial, sans-serif;
+}
+
+.flex-container {
+  /* height: 400px; */
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  background-color: lightgray;
+  /* justify-content: end; */
+  /* justify-content: start; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* Justify Content Always on main axis */
+  /* justify-content: space-between; */
+  /* align-items: end; */
+  /* align-items is always on cross axis */
+    /* align-items: start; */
+      /* align-items: center; */
+/* Add more div items in html to show how they might wrap to next line */
+      /* flex-wrap: wrap; */
+}
+
+.item {
+  /* flex-basis: 300px; */
+  /*flex grow items grow with size of screen */
+  /* flex-grow: 1; */
+  /* flex 1 will have all items same size in container */
+  flex: 1;
+  height: 100px;
+  background: blue;
+  color: white;
+  margin: 10px;
+/* How to center the items in the div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-of-type(1) {
+  /* align-self: start; */
+  /* order: 2; */
+  /* order is used to change the order but not change the html */
+/* flex-basis: 200px; */
+  /* flex-grow: 3; */
+/* flex-shrink shows item decrease with screen size. Not used very often */
+  /* flex-shrink: 3; */
+
+}
+
+.item:nth-of-type(2) {
+  /* align-self: center; */
+  /* order: 1; */
+  /* flex-basis: 200px; */
+/* flex-grow: takes up the entire space. play around with responsiveness to see */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+}
+
+
+.item:nth-of-type(3) {
+  /* align-self: end; */
+  /* order: 3; */
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+}
